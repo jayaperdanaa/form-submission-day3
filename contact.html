@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <div class="nav-left">
+          <a href="index.html">
+            <h1>Jayper<span>.dev</span></h1></a
+          >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My Project</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact.html" id="contact">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="container">
+      <h1>GET IN TOUCH</h1>
+      <form>
+        <div class="form-item">
+          <label for="name">Name</label>
+
+          <input type="text" id="name" placeholder="Your Name" />
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="youremail@.com" />
+        </div>
+        <div class="form-item">
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="phone" placeholder="62 8123 XXXX XXXX" />
+        </div>
+        <div class="form-item">
+          <label for="subject">Subject</label>
+          <select id="subject" style="font-size: 16px; font-weight: 500">
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Fullsatack">Fullstack Developer</option>
+          </select>
+        </div>
+        <div class="text-area">
+          <label for="text-area">Your Message</label>
+          <textarea name="text-area" id="description"></textarea>
+        </div>
+        <div class="btn-submit">
+          <button type="submit" onclick="getData()">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="assets/javascript/contactMe.js"></script>
+  </body>
+</html>
