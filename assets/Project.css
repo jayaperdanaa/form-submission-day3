@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.nav-left {
+  display: flex;
+}
+.nav-left h1 {
+  font-size: 1.3rem;
+  color: rgb(1, 19, 39);
+  cursor: pointer;
+}
+h1 span {
+  color: rgb(184, 68, 23);
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 30px;
+}
+.nav-left ul a {
+  color: rgb(1, 19, 39);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.nav-left ul li a:hover {
+  color: rgb(184, 68, 23);
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+}
+.nav-right a {
+  background-color: rgb(1, 19, 39);
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: 0.3s ease;
+}
+.nav-right a:hover {
+  background-color: rgb(184, 68, 23);
+}
+/* navbar end */
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.blog-tittle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  /* background-color: blue; */
+  margin: auto;
+}
+.image {
+  width: 60%;
+}
+
+img {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.blog-detail {
+  margin-left: 20px;
+}
+h2 {
+  font-size: 16px;
+}
+.fa-calendar,
+.fa-clock {
+  padding: 10px;
+}
+.tech {
+  margin-top: 30px;
+}
+.tech-container {
+  display: flex;
+}
+
+.tech-container i {
+  margin-right: 10px;
+}
+.t1 {
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.t2 {
+  /* display: flex;
+  align-items: center; */
+  padding: 10px;
+}
+.article p {
+  margin-top: 30px;
+  text-align: justify;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/project-detail.css" />
+    <title>Project Detail</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <div class="nav-left">
+          <a href="index.html"
+            ><h1>Jayper<span>.dev</span></h1></a
+          >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Project-detail.html">My Project</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact.html" id="contact">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- content start -->
+    <h1 class="tittle">ADD MY PROJECT</h1>
+    <form action="" onsubmit="addProject(event)">
+      <label for="project-title">Project Name</label>
+      <input type="text" id="project-title" required />
+      <div class="date">
+        <div class="first-date">
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" required />
+        </div>
+        <div class="second-date">
+          <label for="end-date">End Date</label>
+          <input type="date" id="end-date" required />
+        </div>
+      </div>
+      <div class="text-area">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+      </div>
+      <div class="tech">
+        <p>Technologies</p>
+        <div class="checkbox">
+          <div class="t1">
+            <div class="c1">
+              <input type="checkbox" id="c1" value="Node JS" />
+              <label for="c1" class="label-title">Node JS</label>
+            </div>
+            <div class="c2">
+              <input type="checkbox" id="c2" value="React JS" />
+              <label for="c2" class="label-title">React JS</label>
+            </div>
+          </div>
+          <div class="t2">
+            <div class="c3">
+              <input type="checkbox" id="c3" value="Next JS" />
+              <label for="c3" class="label-title">Next JS</label>
+            </div>
+            <div class="c4">
+              <input type="checkbox" id="c4" value="Typescript" />
+              <label for="c4" class="label-title">Typescript</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img">
+        <label>Upload Image</label>
+        <input type="file" class="upload-box" id="upload-box" />
+      </div>
+      <button id="btn-submit" onsubmit="addProject(event)">Submit</button>
+    </form>
+
+    <!-- blog contetnt -->
+    <div class="blog-content">
+      <h1 class="blog-header">MY PROJECT</h1>
+      <div class="content-container" id="content-container">
+        <a href="Project.html">
+          <div class="content1" id="content1">
+            <img src="assets/images/coding.jpeg" alt="coding" />
+            <h1 class="blog-title">Learning Code - 2022</h1>
+            <p class="blog-detail">Durasi 1 bulan</p>
+            <p class="blog-article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis delectus, laboriosam aut sunt commodi vitae officia v</p>
+            <div class="blog-icon">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="blog-btn">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div></a
+        >
+        <!-- <a href="Project.html">
+          <div class="content1">
+            <img src="assets/images/coding.jpeg" alt="coding" />
+            <h1 class="blog-title">Learning Code - 2022</h1>
+            <p class="blog-detail">Durasi 1 bulan</p>
+            <p class="blog-article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis delectus, laboriosam erferendis delectus, laboriosamaut</p>
+            <div class="blog-icon">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="blog-btn">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div></a
+        >
+        <a href="Project.html">
+          <div class="content1">
+            <img src="assets/images/coding.jpeg" alt="coding" />
+            <h1 class="blog-title">Learning Code - 2022</h1>
+            <p class="blog-detail">Durasi 1 bulan</p>
+            <p class="blog-article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis delectus, laboriosam aut sunt commodi vitae officia</p>
+            <div class="blog-icon">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="blog-btn">
+              <button class="btn-edit">edit</button>
+              <button class="btn-delete">delete</button>
+            </div>
+          </div></a -->
+      </div>
+    </div>
+  </body>
+  <script src="assets/javascript/project-detail.js"></script>
+</html>
